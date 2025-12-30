@@ -1,18 +1,22 @@
-const toggleBtn = document.getElementById('theme-toggle');
+const themeBtn = document.getElementById('theme-toggle');
 const body = document.body;
 
-toggleBtn.addEventListener('click', () => {
+themeBtn.addEventListener('click', () => {
     body.classList.toggle('light-mode');
     
-    // حفظ الاختيار في المتصفح عشان لما يعمل ريفريش ميرجعش قديم
-    if(body.classList.contains('light-mode')) {
+    // حفظ حالة الثيم في المتصفح
+    const icon = themeBtn.querySelector('i');
+    if (body.classList.contains('light-mode')) {
+        icon.classList.replace('fa-moon', 'fa-sun');
         localStorage.setItem('theme', 'light');
     } else {
+        icon.classList.replace('fa-sun', 'fa-moon');
         localStorage.setItem('theme', 'dark');
     }
 });
 
-// تفعيل الثيم المحفوظ عند فتح الموقع
-if(localStorage.getItem('theme') === 'light') {
+// استعادة الثيم عند التحميل
+if (localStorage.getItem('theme') === 'light') {
     body.classList.add('light-mode');
+    themeBtn.querySelector('i').classList.replace('fa-moon', 'fa-sun');
 }
