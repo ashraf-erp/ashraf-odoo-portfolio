@@ -44,7 +44,17 @@
         }
         .project-card:hover { transform: scale(1.02); }
         .project-img-box { width: 100%; height: 200px; overflow: hidden; background: white; padding: 20px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; }
-        .project-img-box img { max-width: 100%; max-height: 100%; object-fit: contain; }
+        .project-img-box img {
+    width: 85%;            /* كبرنا النسبة من حجم البوكس */
+    height: 85%;           /* حافظنا على التناسب */
+    object-fit: contain;   /* عشان اللوجو ميتشدش ويبوظ أبعاده */
+    transition: 0.3s ease; /* حركة ناعمة لما تيجي عليه بالماوس */
+}
+
+/* حركة إضافية تخلي اللوجو يكبر سيكة لما تقف عليه */
+.project-card:hover .project-img-box img {
+    transform: scale(1.1);
+}
         .project-info { padding: 25px; }
         .project-info h3 { margin: 0 0 10px; color: var(--accent); }
         .project-info p { font-size: 0.9rem; opacity: 0.8; margin-bottom: 15px; }
