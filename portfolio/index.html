@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Ashraf Hassan - Odoo Implementer">
+    <title>Ashraf Hassan | Odoo Implementer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="cursor-glow"></div>
+
+    <nav class="navbar">
+        <div class="logo">AH<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li>
+                <button id="theme-toggle" class="theme-btn" title="Toggle Light/Dark Mode">
+                    <i class="fa-solid fa-moon" id="theme-icon"></i>
+                </button>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="badge">Odoo Implementer</span>
+                <h1 class="hero-name">Ashraf Hassan</h1>
+                <p class="intro-text">
+                    Bridging the gap between <br>
+                    Accounting and Technology through the implementation of Odoo.
+                </p>
+
+                <div class="contact-glass-grid">
+                    <a href="https://wa.me/201027645929" target="_blank" class="glass-icon-card whatsapp"
+                        title="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                    <a href="mailto:ashraf.191998@icloud.com" class="glass-icon-card email" title="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ashraf-hassan98/" target="_blank"
+                        class="glass-icon-card linkedin" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-image-container">
+                    <img src="ashraf.png" alt="Ashraf Hassan" class="profile-img">
+                    <div class="glowing-gradient"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="zad-logo.jpg" alt="ZAD Electric" class="project-logo">
+                        </div>
+                        <div class="project-info">
+                            <h3>ZAD Electric — ERP Implementation</h3>
+                            <p>Configured and deployed Accounting, Inventory, Sales, and Purchase modules on Odoo Cloud.
+                            </p>
+                            <ul class="tags">
+                                <li>Odoo v19</li>
+                                <li>Accounting</li>
+                                <li>Inventory</li>
+                                <li>Sales</li>
+                                <li>Purchase</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section bg-darker">
+            <div class="container">
+                <h2 class="text-center">Technical & Soft Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fa-brands fa-hubspot"></i> Odoo Expertise</h3>
+                        <ul class="skill-list">
+                            <li>Accounting & Inventory</li>
+                            <li>Cloud Configuration</li>
+                            <li>Financial Reporting</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fa-solid fa-calculator"></i> Accounting</h3>
+                        <ul class="skill-list">
+                            <li>Tax Declarations</li>
+                            <li>Account Reconciliation</li>
+                            <li>Financial Statements</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="text-center">Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024 – Present</div>
+                        <div class="timeline-content glass-card">
+                            <h3>Freelance — Odoo Implementer</h3>
+                            <ul>
+                                <li>Implemented Odoo cloud solutions for SMEs</li>
+                                <li>Built structured financial workflows</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section bg-darker">
+            <div class="container">
+                <h2 class="text-center">Services</h2>
+                <div class="services-grid">
+                    <div class="service-card glass-card">
+                        <div class="icon-box"><i class="fa-solid fa-rocket"></i></div>
+                        <h3>Implementation</h3>
+                        <p>Full-cycle support for SMEs.</p>
+                    </div>
+                    <div class="service-card glass-card">
+                        <div class="icon-box"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                        <h3>Financial Setup</h3>
+                        <p>Chart of accounts & tax setup.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container two-col">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>I am an <strong>Odoo Implementer</strong> with a solid accounting foundation and experience in
+                        ERP systems.</p>
+                    <div class="signature">Ashraf Hassan</div>
+                </div>
+                <div class="about-cards">
+                    <div class="glass-card info-card">
+                        <h3>Objective</h3>
+                        <p>To grow into a lead Odoo Implementer delivering business transformation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ashraf Hassan. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
