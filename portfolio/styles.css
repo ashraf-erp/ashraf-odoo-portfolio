@@ -87,7 +87,7 @@ section {
 /* --- 4. تنسيق المشاريع والخبرة عشان يظهروا صح --- */
 .section-title {
     font-size: 2rem;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
     border-left: 5px solid var(--accent);
     padding-left: 15px;
 }
