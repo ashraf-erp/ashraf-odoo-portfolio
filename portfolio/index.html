@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashraf Hassan | Odoo Implementer</title>
+    <title>Ashraf Hassan | Odoo ERP Expert</title>
 
-    <meta property="og:title" content="Ashraf Hassan | Odoo Implementer">
-    <meta property="og:description" content="Odoo Implementation & Financial Solutions Specialist.">
-    <meta property="og:image" content="https://vrbs6qpw2b-max.github.io/ashraf-odoo-portfolio/portfolio/ashraf.png">
-    <meta property="og:url" content="https://vrbs6qpw2b-max.github.io/ashraf-odoo-portfolio/portfolio/">
+    <meta property="og:title" content="Ashraf Hassan | Odoo ERP Specialist">
+    <meta property="og:description" content="Your entire business in the palm of your hand. Expert Odoo implementation and financial strategy.">
+    <meta property="og:image" content="https://ashraf-erp.github.io/ashraf-odoo-portfolio/portfolio/ashraf.png">
+    <meta property="og:url" content="https://ashraf-erp.github.io/ashraf-odoo-portfolio/portfolio/">
 
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -18,84 +18,46 @@
             --nav-bg: rgba(15, 23, 42, 0.9); --glass: rgba(255, 255, 255, 0.05);
             --card-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
-        body.light-mode {
-            --bg: #f8fafc; --text: #0f172a; --accent: #0284c7;
-            --nav-bg: rgba(248, 250, 252, 0.9); --glass: rgba(0, 0, 0, 0.05);
-            --card-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
         body { background: var(--bg); color: var(--text); margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; transition: 0.3s; scroll-behavior: smooth; }
-
+        
         .navbar { position: fixed; top: 0; width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 15px 5%; background: var(--nav-bg); backdrop-filter: blur(10px); z-index: 1000; box-sizing: border-box; }
-        .nav-links { display: flex; list-style: none; gap: 15px; }
-        .nav-links a { color: var(--text); text-decoration: none; font-size: 0.85rem; font-weight: 500; }
-
+        
         .hero { padding: 160px 8% 60px; display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap; }
-        .hero-content { flex: 1; min-width: 300px; }
         .hero-name { font-size: clamp(2.5rem, 5vw, 3.5rem); margin: 10px 0; }
-        .contact-glass-grid { display: flex; gap: 15px; margin-top: 25px; }
-        .glass-icon-card { width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; background: var(--glass); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; color: var(--accent); font-size: 1.2rem; text-decoration: none; transition: 0.3s; box-shadow: var(--card-shadow); }
-        .glass-icon-card:hover { transform: translateY(-5px); background: var(--accent); color: white; }
+        .hero-p { font-size: 1.15rem; opacity: 0.9; max-width: 650px; line-height: 1.6; color: #cbd5e1; }
         
         .profile-img { max-width: 320px; width: 100%; filter: drop-shadow(0 0 20px var(--accent)); border-radius: 50%; }
-
-        .section { padding: 60px 8%; }
-        .section-title { font-size: 1.8rem; margin-bottom: 30px; display: flex; align-items: center; gap: 10px; }
-        .section-title::after { content: ''; height: 3px; width: 50px; background: var(--accent); border-radius: 2px; }
-
-        .project-card {
-            background: var(--glass); border-radius: 20px; overflow: hidden;
-            border: 1px solid rgba(255,255,255,0.1); box-shadow: var(--card-shadow);
-            display: flex; flex-direction: column; max-width: 450px; transition: 0.3s;
-        }
-        .project-card:hover { transform: scale(1.02); }
-        .project-img-box { width: 100%; height: 200px; overflow: hidden; background: white; padding: 20px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; }
-        .project-img-box img {
-            width: 170%; /* النسبة اللي عجبتك للوجو */
-            height: 170%;
-            object-fit: contain;
-            transition: 0.3s ease;
-        }
-        .project-card:hover .project-img-box img { transform: scale(1.1); }
-
-        .project-info { padding: 25px; }
-        .project-info h3 { margin: 0 0 10px; color: var(--accent); }
-        .project-info p { font-size: 0.9rem; opacity: 0.8; margin-bottom: 15px; }
         
-        .tags { display: flex; gap: 10px; flex-wrap: wrap; list-style: none; padding: 0; }
-        .tags li { background: rgba(56, 189, 248, 0.1); color: var(--accent); padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--accent); }
+        .contact-glass-grid { display: flex; gap: 15px; margin-top: 25px; }
+        .glass-icon-card { width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; background: var(--glass); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; color: var(--accent); font-size: 1.2rem; text-decoration: none; transition: 0.3s; }
+        .glass-icon-card:hover { transform: translateY(-5px); background: var(--accent); color: white; }
 
-        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        .skill-card { background: var(--glass); padding: 25px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.1); box-shadow: var(--card-shadow); }
-        .skill-card i { font-size: 1.5rem; color: var(--accent); margin-bottom: 15px; display: block; }
-        .skill-list { padding-left: 20px; margin: 0; }
-        .skill-list li { margin-bottom: 8px; font-size: 0.9rem; }
+        .section { padding: 80px 8%; }
+        .section-title { font-size: 2rem; margin-bottom: 40px; border-left: 4px solid var(--accent); padding-left: 15px; }
 
-        .theme-btn { background: none; border: 1px solid var(--accent); color: var(--accent); padding: 5px 10px; border-radius: 8px; cursor: pointer; }
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .skill-card { background: var(--glass); padding: 30px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.1); transition: 0.3s; }
+        .skill-card:hover { transform: translateY(-10px); background: rgba(255,255,255,0.08); }
+        .skill-card i { font-size: 2rem; color: var(--accent); margin-bottom: 20px; display: block; }
+        .skill-list { padding-left: 20px; margin: 0; list-style-type: square; }
+        .skill-list li { margin-bottom: 10px; font-size: 1rem; color: #cbd5e1; }
 
-        @media (max-width: 768px) {
-            .hero { text-align: center; justify-content: center; padding-top: 120px; }
-            .nav-links { display: none; }
-            .contact-glass-grid { justify-content: center; }
-        }
+        .project-card { background: var(--glass); border-radius: 25px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); max-width: 450px; }
+        .project-img-box { width: 100%; height: 220px; background: white; padding: 20px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        .project-img-box img { width: 150%; height: 150%; object-fit: contain; }
+        .project-info { padding: 30px; }
     </style>
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo" style="font-weight: bold;">AH<span style="color:var(--accent)">.</span></div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-        </ul>
-        <button id="theme-toggle" class="theme-btn"><i class="fa-solid fa-moon"></i></button>
+        <div class="logo" style="font-size: 1.5rem; font-weight: bold;">AH<span style="color:var(--accent)">.</span></div>
     </nav>
 
-    <section class="hero" id="home">
+    <section class="hero">
         <div class="hero-content">
-            <span style="color:var(--accent); font-weight: 600;">Odoo Implementer</span>
+            <span style="color:var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Odoo ERP & Financial Consultant</span>
             <h1 class="hero-name">Ashraf Hassan</h1>
-            <p>Command Your Company from Anywhere ,</p>
-               <p> Transforming Chaos into Professional Order with Odoo Excellence</p>
+            <p class="hero-p">Your entire business in the palm of your hand. I transform operational chaos into a seamless digital ecosystem through expert Odoo implementation and strategic financial workflows.</p>
             <div class="contact-glass-grid">
                 <a href="https://wa.me/201027645929" target="_blank" class="glass-icon-card"><i class="fa-brands fa-whatsapp"></i></a>
                 <a href="mailto:ashraf.191998@icloud.com" class="glass-icon-card"><i class="fa-solid fa-envelope"></i></a>
@@ -103,63 +65,49 @@
             </div>
         </div>
         <div class="hero-visual">
-            <img src="ashraf.png" alt="Ashraf" class="profile-img">
+            <img src="ashraf.png" alt="Ashraf Hassan" class="profile-img">
         </div>
     </section>
 
-    <section id="projects" class="section">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="project-card">
-            <div class="project-img-box">
-              <img src="zad-logo.jpg.jpg" alt="ZAD Electric Logo">
-            </div>
-            <div class="project-info">
-                <h3>ZAD ELECTRIC</h3>
-                <p>Full implementation of (accounting, inventory, sales and purchasing) modules on Odoo Cloud.</p>
-                <p>Preparing the chart of accounts.</p>
-                <p>Raising opening balances and adjusting inventory and categories.</p>
-                <p>Training for 2 accountants.</p>
-              
-                <ul class="tags">
-                    <li>Odoo V. 18</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="section">
+    <section class="section">
         <h2 class="section-title">Technical Expertise</h2>
         <div class="skills-grid">
             <div class="skill-card">
-                <i class="fa-solid fa-gears"></i>
-                <h3>Odoo Systems</h3>
+                <i class="fa-solid fa-calculator"></i>
+                <h3>Advanced Accounting</h3>
                 <ul class="skill-list">
-                    <li>Implementation & Setup</li>
-                    <li>Inventory Management</li>
-                    <li>Financial Reporting</li>
+                    <li>Financial Structure & Chart of Accounts</li>
+                    <li>Cost Accounting & Inventory Control</li>
+                    <li>IFRS Standard Implementation</li>
+                    <li>Automated Financial Reporting</li>
                 </ul>
             </div>
             <div class="skill-card">
-                <i class="fa-solid fa-calculator"></i>
-                <h3>Accounting</h3>
+                <i class="fa-solid fa-microchip"></i>
+                <h3>Odoo Implementation</h3>
                 <ul class="skill-list">
-                    <li>A/P , A/R Management</li>
-                    <li>Bank Reconciliation</li>
-                    <li>Tax Declarations</li>
-                    <li>Financial Statements</li>
+                    <li>Full System Setup (V.18)</li>
+                    <li>Business Process Automation</li>
+                    <li>Remote System Monitoring</li>
+                    <li>User Training & Strategic Support</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <script>
-        const btn = document.getElementById('theme-toggle');
-        btn.addEventListener('click', () => {
-            document.body.classList.toggle('light-mode');
-            const icon = btn.querySelector('i');
-            icon.classList.toggle('fa-moon');
-            icon.classList.toggle('fa-sun');
-        });
-    </script>
+    <section class="section" id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="project-card">
+            <div class="project-img-box">
+                <img src="zad-logo.jpg.jpg" alt="ZAD Electric Logo">
+            </div>
+            <div class="project-info">
+                <h3 style="color:var(--accent); margin-top:0;">ZAD ELECTRIC</h3>
+                <p style="font-size: 0.95rem; line-height: 1.6;">Full implementation of Odoo Cloud. Structured the entire chart of accounts, managed opening balances, and provided comprehensive training for the accounting team.</p>
+                <span style="background:rgba(56,189,248,0.1); color:var(--accent); padding:5px 15px; border-radius:20px; font-size:0.8rem; border: 1px solid var(--accent);">Odoo V. 18</span>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
